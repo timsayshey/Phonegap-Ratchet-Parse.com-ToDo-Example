@@ -1,10 +1,8 @@
-<cfoutput>
-
-	<cfparam name="pageTitle" default="Model Inventory">    
+<cfoutput>   
 
 	<meta charset="utf-8">
 	
-	<title>#pageTitle#</title>	
+	<title>BaconStash ToDo</title>	
 	
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
 	<meta name="apple-mobile-web-app-capable" content="yes">
