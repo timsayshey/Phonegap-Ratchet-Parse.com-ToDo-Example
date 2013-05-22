@@ -1,0 +1,6 @@
+/* Remove all shading to speed up on android */
+* { 
+text-shadow: none;
+box-shadow: none;
+-webkit-box-shadow: none;
+}

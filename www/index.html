@@ -1,0 +1,1143 @@
+
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			
+			    
+
+	<meta charset="utf-8">
+	
+	<title>Model Inventory</title>	
+	
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/images/touch-icons/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/images/touch-icons/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon-precomposed" sizes="57x57" href="assets/images/touch-icons/apple-touch-icon-57x57.png">
+	
+	<link href='http://fonts.googleapis.com/css?family=Titillium+Web:900,700,600,400,300|Roboto:900,700,400,500|Source+Sans+Pro:900,700,600,400,300|Advent+Pro:600,700,500,400,300|Dosis:800,600,700,500,400' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="assets/css/ratchet.css">
+	<link rel="stylesheet" href="assets/css/app.css">
+	<link rel="stylesheet" href="assets/css/iscroll.css">
+	<link rel="stylesheet" href="assets/css/form.css">
+	
+	
+	<script src="assets/jsapp/mobilestart.js"></script>  
+	
+	<script src="assets/jsvendor/jquery-2.0.0.min.js"></script>  
+	<script src="assets/jsvendor/jquery.elastic.source.js"></script>  
+	<script src="assets/jsvendor/amplify.min.js"></script>
+	<script src="assets/jsvendor/iscroll4.js" type="text/javascript"></script>
+	<script src="assets/jsvendor/history/scripts/bundled/html4html5/jquery.history.js"></script>	 
+	<script src="assets/jsvendor/tmpl.js"></script>
+	<script src="assets/jsvendor/jquery.parse.js"></script>
+	<script src="assets/jsvendor/jgestures.min.js"></script>
+	<script src="assets/jsvendor/strftime-min.js"></script>
+	
+	<script src="assets/jsapp/mobile.js"></script>  
+	
+	
+	<link rel="stylesheet" href="assets/jsvendor/pickadate/themes/pickadate.01.default.css">
+	<script src="assets/jsvendor/pickadate/source/pickadate.legacy.js"></script>	
+
+	       
+	<script>
+		
+		jQuery = $;
+		var myScroll;
+		function loaded() 
+		{		  
+			
+				myScrollcats_view = new iScroll('wrap-cats_view', {
+					useTransform: true,
+					onBeforeScrollStart: function (e) {
+						var target = e.target;
+						while (target.nodeType != 1) target = target.parentNode;
+			
+						if (target.tagName != 'SELECT' && target.tagName != 'INPUT' && target.tagName != 'TEXTAREA')
+							e.preventDefault();
+					}
+				});               
+			
+				myScrollcat_form = new iScroll('wrap-cat_form', {
+					useTransform: true,
+					onBeforeScrollStart: function (e) {
+						var target = e.target;
+						while (target.nodeType != 1) target = target.parentNode;
+			
+						if (target.tagName != 'SELECT' && target.tagName != 'INPUT' && target.tagName != 'TEXTAREA')
+							e.preventDefault();
+					}
+				});               
+			
+				myScrollcat_view = new iScroll('wrap-cat_view', {
+					useTransform: true,
+					onBeforeScrollStart: function (e) {
+						var target = e.target;
+						while (target.nodeType != 1) target = target.parentNode;
+			
+						if (target.tagName != 'SELECT' && target.tagName != 'INPUT' && target.tagName != 'TEXTAREA')
+							e.preventDefault();
+					}
+				});               
+			
+				myScrolledit_account = new iScroll('wrap-edit_account', {
+					useTransform: true,
+					onBeforeScrollStart: function (e) {
+						var target = e.target;
+						while (target.nodeType != 1) target = target.parentNode;
+			
+						if (target.tagName != 'SELECT' && target.tagName != 'INPUT' && target.tagName != 'TEXTAREA')
+							e.preventDefault();
+					}
+				});               
+			
+				myScrollforgotpass = new iScroll('wrap-forgotpass', {
+					useTransform: true,
+					onBeforeScrollStart: function (e) {
+						var target = e.target;
+						while (target.nodeType != 1) target = target.parentNode;
+			
+						if (target.tagName != 'SELECT' && target.tagName != 'INPUT' && target.tagName != 'TEXTAREA')
+							e.preventDefault();
+					}
+				});               
+			
+				myScrollhome = new iScroll('wrap-home', {
+					useTransform: true,
+					onBeforeScrollStart: function (e) {
+						var target = e.target;
+						while (target.nodeType != 1) target = target.parentNode;
+			
+						if (target.tagName != 'SELECT' && target.tagName != 'INPUT' && target.tagName != 'TEXTAREA')
+							e.preventDefault();
+					}
+				});               
+			
+				myScrollitem_form = new iScroll('wrap-item_form', {
+					useTransform: true,
+					onBeforeScrollStart: function (e) {
+						var target = e.target;
+						while (target.nodeType != 1) target = target.parentNode;
+			
+						if (target.tagName != 'SELECT' && target.tagName != 'INPUT' && target.tagName != 'TEXTAREA')
+							e.preventDefault();
+					}
+				});               
+			
+				myScrollitem_view = new iScroll('wrap-item_view', {
+					useTransform: true,
+					onBeforeScrollStart: function (e) {
+						var target = e.target;
+						while (target.nodeType != 1) target = target.parentNode;
+			
+						if (target.tagName != 'SELECT' && target.tagName != 'INPUT' && target.tagName != 'TEXTAREA')
+							e.preventDefault();
+					}
+				});               
+			
+				myScrollsettings = new iScroll('wrap-settings', {
+					useTransform: true,
+					onBeforeScrollStart: function (e) {
+						var target = e.target;
+						while (target.nodeType != 1) target = target.parentNode;
+			
+						if (target.tagName != 'SELECT' && target.tagName != 'INPUT' && target.tagName != 'TEXTAREA')
+							e.preventDefault();
+					}
+				});               
+			
+				myScrollsignin = new iScroll('wrap-signin', {
+					useTransform: true,
+					onBeforeScrollStart: function (e) {
+						var target = e.target;
+						while (target.nodeType != 1) target = target.parentNode;
+			
+						if (target.tagName != 'SELECT' && target.tagName != 'INPUT' && target.tagName != 'TEXTAREA')
+							e.preventDefault();
+					}
+				});               
+			
+				myScrollsignup = new iScroll('wrap-signup', {
+					useTransform: true,
+					onBeforeScrollStart: function (e) {
+						var target = e.target;
+						while (target.nodeType != 1) target = target.parentNode;
+			
+						if (target.tagName != 'SELECT' && target.tagName != 'INPUT' && target.tagName != 'TEXTAREA')
+							e.preventDefault();
+					}
+				});               
+			
+		}           
+		
+		document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+		
+		$(function() {
+			loaded();
+		});
+		
+	</script> 
+	
+	
+			
+	<style type="text/css">
+	
+		#wrap-cats_view,#wrap-cat_form,#wrap-cat_view,#wrap-edit_account,#wrap-forgotpass,#wrap-home,#wrap-item_form,#wrap-item_view,#wrap-settings,#wrap-signin,#wrap-signup {
+			position:absolute;  
+			/* 
+				z-index:1; 
+				Disabled due to android browser bug 
+				Kind of outlined here:
+				https://groups.google.com/forum/?fromgroups=#!topic/iui-developers/qjE3iQlN790
+			*/ 
+			top:44px; /* Set to height of header */
+			bottom:48px; /* Set to height of footer */  
+			left:0;
+			width:100%;
+			overflow:auto;			        
+		} 
+		#scroller  {
+			padding-top:10px !important;        	
+		}
+		
+		#wrap-cat_view {
+			-moz-transition: all 1px;
+			-ms-transition: all 1px;
+			transition: all 1px;
+		}
+		
+		#wrap-home #scroller  {
+			padding-top:0px !important;        	
+		}
+		
+	</style>
+	
+		
+	<script src="assets/jsapp/framework.js"></script>  	
+	<script src="assets/jsapp/common.js"></script>  	
+	<script src="assets/jsapp/item.js"></script>
+	<script src="assets/jsapp/category.js"></script>
+	<script src="assets/jsapp/categoryitems.js"></script>	
+	<script src="assets/jsapp/user.js"></script>
+	<script src="assets/jsapp/notify.js"></script>
+	<script src="assets/jsapp/init.js"></script>
+	
+	
+	
+	
+			<script type="text/html" id="itempage_tmpl">
+				
+	<ul class="list inset">
+		<li class="list-divider">Primary Information</li>
+		<li>
+			<h3><%=itemName%></h3>
+			<h5>Due: <%=dueDateView%></h5>
+			<%=description%>
+		</li>
+		<li class="list-divider">Additional Information</li>
+		<li id="itemCategoryName"></li>		
+		<li><strong>Location:</strong> <%=location%></li>
+		<li><strong>Assigned to:</strong> <%=assignedTo%></li>
+		<li class="list-divider">Notes</li>
+		<li><%=notes%></li>
+	</ul>
+
+			</script>
+		
+			<script type="text/html" id="item_tmpl">
+				
+	<tr data-id="<%=objectId%>">
+		<td> 
+		  <a class="icon-trash itemremove" href="javascript:void(0)"></a> 
+		</td>
+		<td class="body"><a href="javascript:void(0)" class="viewItem" data-id="<%=objectId%>"><%=itemName%></a> - <a href="javascript:void(0)" class="editItem" data-id="<%=objectId%>">Edit</a>
+		</td>
+	</tr>
+
+			</script>
+		
+			<script type="text/html" id="itemformsubmit_tmpl">
+				
+	<a class="button-positive notlink itemsubmit" href="javascript:void(0)" id="<%=submitItemEdit%>"		
+		<% if(typeof objectId !== "undefined") { %>
+			data-id="<%=objectId%>"
+		<% } %>
+	>Submit</a>
+
+			</script>
+		
+			<script type="text/html" id="categoryselector_tmpl">
+				
+	<select id="catId">
+		<% for ( var i = 0; i < categoriesObj.length; i++ ) { %>
+			<option value="<%=categoriesObj[i].objectId%>" 
+			<% if(thisCatId === categoriesObj[i].objectId) { %>
+				selected
+			<% } %>
+			><%=categoriesObj[i].categoryName%></option>
+		<% } %>
+	</select>
+
+			</script>
+		
+			<script type="text/html" id="categorypage_tmpl">
+				
+	<div id="wrapper3" data-id="<%=objectId%>">
+		<div id="scroller">					
+			<ul class="list inset">
+				<%=categoryName%>
+			</ul>
+		</div>
+	</div>
+
+			</script>
+		
+			<script type="text/html" id="itemCategoryName_tmpl">
+				
+	<strong>Category:</strong> <%=categoryName%>
+
+			</script>
+		
+			<script type="text/html" id="itemform_tmpl">
+				
+	<div class="input-group">
+		<div class="input-row">
+			<label>Name</label>
+			<input type="text" placeholder="Name" id="itemName" value="<%=itemName%>" />
+		</div>
+		<div class="input-row">
+			<label>Category</label>
+			<div id="categorySelect"></div>
+		</div>		
+		<div class="input-row">
+			<label>Due Date</label>
+			<input type="text" placeholder="Due Date" class="datepicker" id="dueDate" value="<%=dueDateView%>" />
+		</div>
+		<div class="input-row">
+			<label>Location</label>
+			<input type="text" placeholder="Location" id="location" value="<%=location%>" />
+		</div>
+		<div class="input-row">
+			<label>Description</label>
+			<textarea id="description" placeholder="Description"><%=description%></textarea>
+		</div>
+		<div class="input-row">
+			<label>Assigned to</label>
+			<input type="text" placeholder="Assigned to" id="assignedTo" value="<%=assignedTo%>" />
+		</div>
+		<div class="input-row">
+			<label>Notes</label>
+			<textarea id="notes" placeholder="Notes"><%=notes%></textarea>
+		</div>
+	</div>
+
+			</script>
+		
+			<script type="text/html" id="category_tmpl">
+				
+	<li>
+		<a href="javascript:void(0)" class="viewCategory" data-id="<%=objectId%>">
+			<strong><%=categoryName%></strong>
+			<span class="chevron"></span>
+			<span class="count">1</span>
+		</a>
+		<a href="javascript:void(0)" class="editCategory button-main btn2 catEdit" data-id="<%=objectId%>">Edit</a> 
+		<a href="javascript:void(0)" class="catremove button-negative btn1 catEdit" data-id="<%=objectId%>">Delete</a>
+	</li>
+
+			</script>
+		
+			<script type="text/html" id="categoryform_tmpl">
+				
+	<input type="text" placeholder="Category Name" id="catName" value="<%=categoryName%>" /><br>	
+	<a href="javascript:void(0)" class="btn btn-primary" id="<%=submitCategoryEdit%>" 
+	<% if(submitCategoryEdit == "categoryName") { %>
+		data-id="<%=objectId%>"
+	<% } %>
+	>Submit</a>
+
+			</script>
+		
+			<script type="text/html" id="categoryItems_tmpl">
+				
+
+		<% 
+			var cnt = 0;
+			for ( var z = 0; z < allItems.length; z++ ) 
+			{ 
+		%>
+
+			<% 
+				if(objectId === allItems[z].catId || objectId === 'all') 
+				{ 
+			%>
+			
+				<li>
+					<a href="javascript:void(0)" class="viewItem" data-id="<%=allItems[z].objectId%>">						
+						
+						<div style="padding-top:10px;">
+							<strong><%=allItems[z].itemName%></strong><br />
+							Due: <%=allItems[z].dueDateView%>
+														
+							<span class="chevron"></span>
+						</div>
+						<br class="clear">
+					</a>
+					<a href="javascript:void(0)" class="editItem button-main btn2 itemEdit" data-id="<%=allItems[z].objectId%>">Edit</a> 
+		<a href="javascript:void(0)" class="itemremove button-negative btn1 itemEdit" data-id="<%=allItems[z].objectId%>">Delete</a>
+				</li>
+			<% 
+					cnt++;
+				}
+				
+			%>
+
+		<% } %>
+		
+		<%
+			if(cnt === 0)
+			{
+		%>
+				<h2 class="insettext">You haven't added any items yet.<span>Click "Create item" to go add one now.</span></h2>
+		<%			
+			} 
+		%>
+
+			</script>
+		
+			<script type="text/html" id="categoriesItemsList_tmpl">
+				
+	<% for ( var i = 0; i < categoriesObj.length; i++ ) { %>
+		
+		<h4><%=categoriesObj[i].categoryName%></h4>
+
+		<% for ( var z = 0; z < allItems.length; z++ ) { %>
+
+			<% if(categoriesObj[i].objectId === allItems[z].catId) { %>
+				<%=allItems[z].itemName%> <br>
+			<% } %>
+
+		<% } %>
+
+	<% } %>
+
+			</script>
+			
+	
+	<script type="text/javascript"> 
+		var currentPage = 'home';
+		
+		$(function() {
+			scrollRefreshInterval();
+		});
+		
+		function scrollRefreshInterval() {		   
+		   refreshClick();
+		   setTimeout(scrollRefreshInterval,5000);
+		}
+		
+		function refreshScroll() 
+		{  
+			$(function() {
+				
+					var $mycats_view = $("#cats_view");
+					if($mycats_view.is(':visible')) 
+					{ 
+						myScrollcats_view.refresh(); 
+					};
+				
+					var $mycat_form = $("#cat_form");
+					if($mycat_form.is(':visible')) 
+					{ 
+						myScrollcat_form.refresh(); 
+					};
+				
+					var $mycat_view = $("#cat_view");
+					if($mycat_view.is(':visible')) 
+					{ 
+						myScrollcat_view.refresh(); 
+					};
+				
+					var $myedit_account = $("#edit_account");
+					if($myedit_account.is(':visible')) 
+					{ 
+						myScrolledit_account.refresh(); 
+					};
+				
+					var $myforgotpass = $("#forgotpass");
+					if($myforgotpass.is(':visible')) 
+					{ 
+						myScrollforgotpass.refresh(); 
+					};
+				
+					var $myhome = $("#home");
+					if($myhome.is(':visible')) 
+					{ 
+						myScrollhome.refresh(); 
+					};
+				
+					var $myitem_form = $("#item_form");
+					if($myitem_form.is(':visible')) 
+					{ 
+						myScrollitem_form.refresh(); 
+					};
+				
+					var $myitem_view = $("#item_view");
+					if($myitem_view.is(':visible')) 
+					{ 
+						myScrollitem_view.refresh(); 
+					};
+				
+					var $mysettings = $("#settings");
+					if($mysettings.is(':visible')) 
+					{ 
+						myScrollsettings.refresh(); 
+					};
+				
+					var $mysignin = $("#signin");
+					if($mysignin.is(':visible')) 
+					{ 
+						myScrollsignin.refresh(); 
+					};
+				
+					var $mysignup = $("#signup");
+					if($mysignup.is(':visible')) 
+					{ 
+						myScrollsignup.refresh(); 
+					};
+				
+			});
+		}
+		
+		function refreshClick()
+		{
+			
+			setTimeout(function() 
+			{  
+				refreshScroll();
+			
+				setTimeout(function()
+				{
+					$('#wrap-cats_view,#wrap-cat_form,#wrap-cat_view,#wrap-edit_account,#wrap-forgotpass,#wrap-home,#wrap-item_form,#wrap-item_view,#wrap-settings,#wrap-signin,#wrap-signup').css('min-height',$(window).height() - 100);
+					
+					refreshScroll();
+				},500);	
+				
+			}, 100);
+		}
+			
+		$(function() {	 
+			
+			$('a').bind('tapone', function()
+			{   
+				refreshClick();
+			});			      
+		});
+	</script>
+	
+
+
+	<link rel="stylesheet" href="assets/css/shame.css">			
+			
+		
+		</head>
+		<body>
+		
+			<div class="overlay" style="display:none;">
+				<div class="overlay-inner">
+					<div class="overlay-loader" style="display:none;">
+						<div id="toolong" style="display:none;">
+							<a href="#" onclick='hideLoader(); return false;' class="button-positive">Taking too long?</a>
+						</div>
+					</div>
+					<div class="overlay-box" style="display:none;"></div>
+				</div>
+			</div>
+		
+			
+	
+	
+	
+	<div id="cats_view" class="page">
+	
+		<header class="bar-title">
+			<a class="button-main goback" href="javascript:void(0)">Back</a>
+			<h1 class="title">Categories</h1>
+		</header>
+		
+		<nav class="bar-tab">
+    <ul class="tab-inner">
+      <li class="tab-item">
+        <a href="#home">
+          <img class="tab-icon" src="assets/images/icon-home.png">
+          <div class="tab-label">Home</div>
+        </a>
+      </li>
+      <li class="tab-item">
+	  <a href="javascript:void(0)" class="viewCategory" data-id="all">
+          <img class="tab-icon" src="assets/images/icon-checkmark.png">
+          <div class="tab-label">To Do's</div>
+        </a>
+      </li>
+      <li class="tab-item">
+        <a href="#cats_view">
+          <img class="tab-icon" src="assets/images/icon-folder.png">
+          <div class="tab-label">Categories</div>
+        </a>
+      </li>
+	  <li class="tab-item">
+        <a href="#settings">
+          <img class="tab-icon" src="assets/images/icon-settings.png">
+          <div class="tab-label">Settings</div>
+        </a>
+      </li>
+    </ul>
+  </nav>
+		
+		<div id="wrap-cats_view">
+			<div id="scroller">			
+				
+				<h2 class="textinset">Choose a category:</h2>
+				
+				<ul class="list inset" id="category_list"></ul>	
+				
+				<ul class="list inset">	
+					<li>
+						<a href="javascript:void(0)" class="catEditInit">
+							<strong>Edit Category</strong>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)" class="linkNewCategory notlink">
+							<strong>Create Category</strong>
+							<span class="chevron"></span>
+						</a>
+					</li>				
+				</ul>			
+			</div>
+		</div>
+		
+	</div>
+
+
+	
+	
+	
+	<div id="cat_form" class="page" style="display:none;">
+	
+		<header class="bar-title">
+			<a class="button-main goback" href="javascript:void(0)">Back</a>
+			<h1 class="title">Category</h1>
+			<a href="javascript:void(0)" class="button-positive submitbtn" id="new_category">Submit</a>
+		</header>
+		
+		<nav class="bar-tab">
+    <ul class="tab-inner">
+      <li class="tab-item">
+        <a href="#home">
+          <img class="tab-icon" src="assets/images/icon-home.png">
+          <div class="tab-label">Home</div>
+        </a>
+      </li>
+      <li class="tab-item">
+	  <a href="javascript:void(0)" class="viewCategory" data-id="all">
+          <img class="tab-icon" src="assets/images/icon-checkmark.png">
+          <div class="tab-label">To Do's</div>
+        </a>
+      </li>
+      <li class="tab-item">
+        <a href="#cats_view">
+          <img class="tab-icon" src="assets/images/icon-folder.png">
+          <div class="tab-label">Categories</div>
+        </a>
+      </li>
+	  <li class="tab-item">
+        <a href="#settings">
+          <img class="tab-icon" src="assets/images/icon-settings.png">
+          <div class="tab-label">Settings</div>
+        </a>
+      </li>
+    </ul>
+  </nav>
+		
+		<div id="wrap-cat_form">
+			<div id="scroller">
+				<div class="form-wrapper">
+					<div class="input-group">
+						<div class="input-row">
+							<label>Category Name</label>
+							<input type="text" placeholder="Name" id="catName" />
+						</div>
+					</div>					
+				</div>
+			</div>
+		</div>
+		
+	</div>
+
+
+
+	
+	
+	<div id="cat_view" class="page" style="display:none;">
+	
+		<header class="bar-title">
+			<a class="button-main goback" href="javascript:void(0)">Back</a>
+			<h1 class="title" data-id="all">All To Do's</h1>
+		</header>
+		
+		<nav class="bar-tab">
+    <ul class="tab-inner">
+      <li class="tab-item">
+        <a href="#home">
+          <img class="tab-icon" src="assets/images/icon-home.png">
+          <div class="tab-label">Home</div>
+        </a>
+      </li>
+      <li class="tab-item">
+	  <a href="javascript:void(0)" class="viewCategory" data-id="all">
+          <img class="tab-icon" src="assets/images/icon-checkmark.png">
+          <div class="tab-label">To Do's</div>
+        </a>
+      </li>
+      <li class="tab-item">
+        <a href="#cats_view">
+          <img class="tab-icon" src="assets/images/icon-folder.png">
+          <div class="tab-label">Categories</div>
+        </a>
+      </li>
+	  <li class="tab-item">
+        <a href="#settings">
+          <img class="tab-icon" src="assets/images/icon-settings.png">
+          <div class="tab-label">Settings</div>
+        </a>
+      </li>
+    </ul>
+  </nav>
+		
+		<div id="wrap-cat_view">
+			<div id="scroller">
+				 <ul class="itemlist list inset"></ul>
+				 <ul class="list inset">	
+					<li>
+						<a href="javascript:void(0)" class="itemEditInit">
+							<strong>Edit To Do</strong>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)" class="linkNewItem notlink">
+							<strong>Create To Do</strong>
+							<span class="chevron"></span>
+						</a>
+					</li>				
+				</ul>
+			</div>
+		</div>
+	</div>
+
+
+	
+	
+	
+	<div id="edit_account" class="page" style="display:none;">
+		<header class="bar-title">
+			<a class="button-main goback" href="javascript:void(0)">Back</a>
+			<h1 class="title">Edit Account</h1>
+		</header>
+		
+		<nav class="bar-tab">
+    <ul class="tab-inner">
+      <li class="tab-item">
+        <a href="#home">
+          <img class="tab-icon" src="assets/images/icon-home.png">
+          <div class="tab-label">Home</div>
+        </a>
+      </li>
+      <li class="tab-item">
+	  <a href="javascript:void(0)" class="viewCategory" data-id="all">
+          <img class="tab-icon" src="assets/images/icon-checkmark.png">
+          <div class="tab-label">To Do's</div>
+        </a>
+      </li>
+      <li class="tab-item">
+        <a href="#cats_view">
+          <img class="tab-icon" src="assets/images/icon-folder.png">
+          <div class="tab-label">Categories</div>
+        </a>
+      </li>
+	  <li class="tab-item">
+        <a href="#settings">
+          <img class="tab-icon" src="assets/images/icon-settings.png">
+          <div class="tab-label">Settings</div>
+        </a>
+      </li>
+    </ul>
+  </nav>
+		
+		<div id="wrap-edit_account">
+			<div id="scroller">
+				<div class="form-wrapper">
+					<div class="input-group">
+						<div class="input-row">
+							<label>Email</label>
+							<input type="text" id="edit_username" placeholder="Email">
+						</div>
+						<div class="input-row">
+							<label>Password</label>
+							<input type="password" id="edit_password" placeholder="Password">
+						</div>
+					</div>
+
+<a class="button-positive button-block" href="javascript:void(0)" onclick="_editAccount(); return false;">Submit</a>
+
+				</div>
+			</div>
+		</div> 
+	</div> 
+
+
+	
+	
+	
+	<div id="forgotpass" class="page" style="display:none;">
+	
+		<header class="bar-title">		
+			<a href="#signin" class="button-main">Back</a>
+			<h1 class="title">Recover Password</h1>			
+		</header>
+		
+		<div id="wrap-forgotpass">
+			<div id="scroller">
+				<div class="form-wrapper">
+				
+					<div class="input-group">					
+						<div class="input-row">
+							<label class="full">
+								Enter your email address and submit it. You will then recieve an email with will allow you to reset your password.
+							</label>
+						</div>
+						<div class="input-row">
+							<label>Email</label>
+							<input type="text" id="reset_username" placeholder="Email">
+						</div>						
+					</div>
+					
+					<a class="button-positive button-block notlink" href="javascript:void(0)" id="reset_submit">Reset</a>						
+					
+				</div>
+			</div>
+		</div> 
+		
+	</div> 
+
+
+
+	
+	
+	<div id="home" class="page" style="display:none;">
+	
+		<header class="bar-title">
+			<h1 class="title" data-id="all">To Do</h1>
+		</header>
+		
+		<nav class="bar-tab">
+    <ul class="tab-inner">
+      <li class="tab-item">
+        <a href="#home">
+          <img class="tab-icon" src="assets/images/icon-home.png">
+          <div class="tab-label">Home</div>
+        </a>
+      </li>
+      <li class="tab-item">
+	  <a href="javascript:void(0)" class="viewCategory" data-id="all">
+          <img class="tab-icon" src="assets/images/icon-checkmark.png">
+          <div class="tab-label">To Do's</div>
+        </a>
+      </li>
+      <li class="tab-item">
+        <a href="#cats_view">
+          <img class="tab-icon" src="assets/images/icon-folder.png">
+          <div class="tab-label">Categories</div>
+        </a>
+      </li>
+	  <li class="tab-item">
+        <a href="#settings">
+          <img class="tab-icon" src="assets/images/icon-settings.png">
+          <div class="tab-label">Settings</div>
+        </a>
+      </li>
+    </ul>
+  </nav>
+		
+		<div id="wrap-home">
+			<div id="scroller">
+				<div id="boxes">
+					<div class="box">
+						<a href="javascript:void(0)" class="viewCategory box-click" data-id="all">
+							<img src="assets/images/icon-view-items.png" /><br />
+							View To Do List
+						</a>
+					</div>
+					<div class="box">
+						<a href="javascript:void(0)" class="linkNewItem notlink box-click">
+							<img src="assets/images/icon-add-item.png" /><br />
+							Add To Do
+						</a>
+					</div>
+					<div class="box">
+						<a href="#cats_view" class="box-click">
+							<img src="assets/images/icon-view-cats.png" /><br />
+							View Categories
+						</a>
+					</div>
+					<div class="box">
+						<a href="javascript:void(0)" class="linkNewCategory notlink box-click">
+							<img src="assets/images/icon-add-cat.png" /><br />
+							Add Category
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	
+	
+	
+	<div id="item_form" class="page" style="display:none;">
+		<header class="bar-title">
+			<a class="button-main goback" href="javascript:void(0)">Back</a>
+			<h1 class="title">Add To Do</h1>
+		</header>
+		
+		<nav class="bar-tab">
+    <ul class="tab-inner">
+      <li class="tab-item">
+        <a href="#home">
+          <img class="tab-icon" src="assets/images/icon-home.png">
+          <div class="tab-label">Home</div>
+        </a>
+      </li>
+      <li class="tab-item">
+	  <a href="javascript:void(0)" class="viewCategory" data-id="all">
+          <img class="tab-icon" src="assets/images/icon-checkmark.png">
+          <div class="tab-label">To Do's</div>
+        </a>
+      </li>
+      <li class="tab-item">
+        <a href="#cats_view">
+          <img class="tab-icon" src="assets/images/icon-folder.png">
+          <div class="tab-label">Categories</div>
+        </a>
+      </li>
+	  <li class="tab-item">
+        <a href="#settings">
+          <img class="tab-icon" src="assets/images/icon-settings.png">
+          <div class="tab-label">Settings</div>
+        </a>
+      </li>
+    </ul>
+  </nav>
+		
+		<div id="wrap-item_form">
+			<div id="scroller">
+				<div id="itemformwrap"><div></div></div>
+			</div>
+		</div> 
+	</div> 
+
+
+	
+	
+	
+	<div id="item_view" class="page" style="display:none;">
+		
+		<header class="bar-title">
+			<a class="button-main goback" href="javascript:void(0)">Back</a>
+			<h1 class="title">View To Do</h1>
+			<a class="button-main editItem" href="javascript:void(0)" data-id="">Edit</a>
+		</header>
+		
+		<nav class="bar-tab">
+    <ul class="tab-inner">
+      <li class="tab-item">
+        <a href="#home">
+          <img class="tab-icon" src="assets/images/icon-home.png">
+          <div class="tab-label">Home</div>
+        </a>
+      </li>
+      <li class="tab-item">
+	  <a href="javascript:void(0)" class="viewCategory" data-id="all">
+          <img class="tab-icon" src="assets/images/icon-checkmark.png">
+          <div class="tab-label">To Do's</div>
+        </a>
+      </li>
+      <li class="tab-item">
+        <a href="#cats_view">
+          <img class="tab-icon" src="assets/images/icon-folder.png">
+          <div class="tab-label">Categories</div>
+        </a>
+      </li>
+	  <li class="tab-item">
+        <a href="#settings">
+          <img class="tab-icon" src="assets/images/icon-settings.png">
+          <div class="tab-label">Settings</div>
+        </a>
+      </li>
+    </ul>
+  </nav>
+		
+		<div id="wrap-item_view">
+			<div id="scroller">
+				<div id="itemPage"></div>
+			</div>
+		</div>
+		
+	</div>
+
+
+
+	
+	
+	<div id="settings" class="page" style="display:none;">
+	
+		<header class="bar-title">
+			<a class="button-main goback" href="javascript:void(0)">Back</a>
+			<h1 class="title" data-id="all">Settings</h1>
+		</header>
+		
+		<nav class="bar-tab">
+    <ul class="tab-inner">
+      <li class="tab-item">
+        <a href="#home">
+          <img class="tab-icon" src="assets/images/icon-home.png">
+          <div class="tab-label">Home</div>
+        </a>
+      </li>
+      <li class="tab-item">
+	  <a href="javascript:void(0)" class="viewCategory" data-id="all">
+          <img class="tab-icon" src="assets/images/icon-checkmark.png">
+          <div class="tab-label">To Do's</div>
+        </a>
+      </li>
+      <li class="tab-item">
+        <a href="#cats_view">
+          <img class="tab-icon" src="assets/images/icon-folder.png">
+          <div class="tab-label">Categories</div>
+        </a>
+      </li>
+	  <li class="tab-item">
+        <a href="#settings">
+          <img class="tab-icon" src="assets/images/icon-settings.png">
+          <div class="tab-label">Settings</div>
+        </a>
+      </li>
+    </ul>
+  </nav>
+		
+		<div id="wrap-settings">
+			<div id="scroller">
+				 <ul class="list inset">
+					<li class="list-divider">Account</li>	
+					<li>
+						<a href="#" id="logout" onclick='_logout(); return false;'>
+							<strong>Logout</strong>
+						</a>
+					</li>	
+					<li>
+						<a href="#edit_account">
+							<strong>Edit Account</strong>
+						</a>
+					</li>	
+					<li class="list-divider">Tools</li>	
+					<li>
+						<a href="javascript:void(0)" id="exportData">
+							<strong>Export and email data</strong>
+						</a>
+					</li>		
+				</ul>
+			</div>
+		</div>
+	</div>
+
+
+	
+	
+	
+	<div id="signin" class="page" style="display:none;">
+	
+		<header class="bar-title">			
+			<h1 class="title">Sign In</h1>
+		</header>
+		
+		<div id="wrap-signin">
+			<div id="scroller">
+				<div class="form-wrapper">
+				
+					<div class="input-group">
+						<div class="input-row">
+							<label>Email</label>
+							<input type="text" id="log_username" value="" placeholder="Email">
+						</div>
+						<div class="input-row">
+							<label>Password</label>
+							<input type="password" id="log_password" value="" placeholder="Password">
+						</div>
+					</div>
+					
+					<a class="button-positive button-block notlink" href="javascript:void(0)" id="log_submit">Login</a>
+					
+					<a href="#signup" class="button">Need to sign up?</a>
+					<a href="#forgotpass" class="button" style="float:right;">Forgot Pass?</a>					
+					
+				</div>
+			</div>
+		</div> 
+		
+	</div> 
+
+
+	
+	
+	
+	<div id="signup" class="page" style="display:none;">
+	
+		<header class="bar-title">						
+			<h1 class="title">Sign Up</h1>			
+		</header>
+		
+		<div id="wrap-signup">
+			<div id="scroller">
+				<div class="form-wrapper">
+				
+					<div class="input-group">
+						<div class="input-row">
+							<label>Email</label>
+							<input type="text" id="sign_username" placeholder="Email">
+						</div>
+						<div class="input-row">
+							<label>Password</label>
+							<input type="password" id="sign_password" placeholder="Password">
+						</div>
+					</div>
+					
+					<a class="button-positive button-block notlink" href="javascript:void(0)" id="sign_submit">Sign Up</a>			
+					<a href="#signin" class="button">Need to login?</a>
+					
+				</div>
+			</div>
+		</div>
+		 
+	</div> 
+
+
+		
+		</body>
+	</html>
+
+
