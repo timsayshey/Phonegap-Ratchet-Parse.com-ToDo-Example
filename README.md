@@ -6,6 +6,14 @@ Taste the bacon.
 
 I have combined all of these components plus more to create a lightweight application (framework?) that runs as smooth as butter on Android 4+ and iOS. Right now I'll admit, its not the most organized code, I am learning best practices for javascript BUT it works so if you are thinking "Hey this code looks like it was written by a monkey on crack" and you think you can improve it, then *PLEASE CONTRIBUTE* or raise an issue :{D
 
+### Install and try it out
+
+Just download and extract the code to a folder. Then open the index.html file in a webkit compatible browser (chrome).
+
+I would recommend that you change the Parse app key and rest key with your own. To do this edit /assets/jsvendor/jquery.parse.js lines 5 and 6.
+
+Coldfusion is only required to compile the index.html file. Of course you could use this without it but it would be very difficult IMO.
+
 ### Why Ratchet?
 
 Well, I needed a lightweight CSS library so Ratchet was a perfect fit. I only use the Ratchet CSS, not the Ratchet JS.
@@ -32,13 +40,4 @@ I am posting this work in an effort to help improve and evolve this code and to 
 
 ### Documentation
 
-I wish I had time to better comment the code, I will probably due this if demand grows or if someone else wants to take this on, feel free :)
-
-### Installation
-
-Just download and extract the code to a folder. Then open the index.html file.
-
-I would recommend that you change the Parse app key and rest key with your own. To do this edit /assets/jsvendor/jquery.parse.js lines 5 and 6.
-
-Coldfusion is only required to compile the index.html file. Of course you could use this without it but it would be very difficult IMO.
-
+I wish I had time to better comment the code, I will probably do this if demand grows or if someone else wants to take this on, feel free :)
