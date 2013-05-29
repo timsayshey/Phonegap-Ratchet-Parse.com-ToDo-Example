@@ -1,6 +1,6 @@
 # Phonegap Ratchet Parse.com ToDo Example
 
-Taste the bacon.
+## [View the demo](http://outerplex.com/Phonegap-Ratchet-Parse.com-ToDo-Example "Did I mention it's awesome!").
 
 ## CFML + Ratchet + iScroll + Parse.com + Phonegap = Awesome
 
