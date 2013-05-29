@@ -1,8 +1,8 @@
-# BaconStash ToDo Demo App
+# Phonegap Ratchet Parse.com ToDo Example
 
 Taste the bacon.
 
-## CFML + Ratchet + iScroll + Parse.com + Phonegap = Sweet delicious bacon
+## CFML + Ratchet + iScroll + Parse.com + Phonegap = Awesome
 
 I have combined all of these components plus more to create a lightweight application (framework?) that runs as smooth as butter on Android 4+ and iOS. Right now I'll admit, its not the most organized code, I am learning best practices for javascript BUT it works so if you are thinking "Hey this code looks like it was written by a monkey on crack" and you think you can improve it, then *PLEASE CONTRIBUTE* or raise an issue :{D
 
