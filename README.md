@@ -2,7 +2,7 @@
 
 ## [Here's the demo](http://outerplex.com/Phonegap-Ratchet-Parse.com-ToDo-Example "Did I mention it's awesome!")
 
-## CFML + Ratchet + iScroll + Parse.com + Phonegap = Awesome
+## Phonegap + Ratchet + Parse.com + Magic = Awesome
 
 I have combined all of these components plus more to create a lightweight demo app that runs buttery smooth on Android 4+ and iOS. Right now I'll admit, while the code is organized, it could be better (c'mon I'm learnin') BUT it works so if you're thinking "My grandma can code better than this" and you can improve it, then *PLEASE CONTRIBUTE* or raise an issue :{D
 
