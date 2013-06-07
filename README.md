@@ -4,7 +4,7 @@
 
 ## CFML + Ratchet + iScroll + Parse.com + Phonegap = Awesome
 
-I have combined all of these components plus more to create a lightweight application (framework?) that runs as smooth as butter on Android 4+ and iOS. Right now I'll admit, its not the most organized code, I am learning best practices for javascript BUT it works so if you are thinking "Hey this code looks like it was written by a monkey on crack" and you think you can improve it, then *PLEASE CONTRIBUTE* or raise an issue :{D
+I have combined all of these components plus more to create a lightweight demo app that runs buttery smooth on Android 4+ and iOS. Right now I'll admit, while the code is organized, it could be better (c'mon I'm learnin') BUT it works so if you're thinking "My grandma can code better than this" and you can improve it, then *PLEASE CONTRIBUTE* or raise an issue :{D
 
 ## Installation
 
