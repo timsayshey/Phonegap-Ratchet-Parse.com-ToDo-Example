@@ -4,7 +4,7 @@
 
 ## Phonegap + Ratchet + Parse.com + Magic = Awesome
 
-I have combined all of these components plus more to create a lightweight demo app that runs buttery smooth on Android 4+ and iOS. Right now I'll admit, while the code is organized, it could be better (c'mon I'm learnin') BUT it works so if you're thinking "My grandma can code better than this" and you can improve it, then *PLEASE CONTRIBUTE* or raise an issue :{D
+I have combined all of these components plus more to create a lightweight demo app that runs buttery smooth on Android 4+ and iOS.
 
 ## Installation
 
@@ -46,7 +46,7 @@ Well, this is all meant for phonegap but you could use it with Trigger.io or jus
 
 ### Why CFML?
 
-Mainly to keep the code more organized and easier to read and manage (and stuff). Instead of writing up all the code in one huge HTML file, it is written out in separate files then compiled with CFML in to one HTML file. One of the great features of CFML is that the language is so easy to learn. At times, it's almost like an extension of HTML. Plus, since it runs on Java, you have access to all of the power of Java.
+Mainly to keep the code more organized and easier to read and manage. Instead of writing up all the code in one huge HTML file, it is written out in separate files then compiled with CFML in to one HTML file. One of the great features of CFML is that the language is so easy to learn. At times, it's almost like an extension of HTML. Plus, since it runs on Java, you have access to all of the power of Java.
 
 ### This is opensource
 
@@ -55,3 +55,7 @@ I am posting this work in an effort to help improve and evolve this code and to 
 ### Documentation
 
 I wish I had time to better comment the code, I will probably do this if demand grows or if someone else wants to take this on, feel free :)
+
+### Contribute
+
+I'm an expert at a few things, and a hack at most. Feel free to make changes and issue a pull request.
