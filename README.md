@@ -1,10 +1,8 @@
 # Phonegap Ratchet Parse.com ToDo Example
 
-## [Here's the demo](http://outerplex.com/Phonegap-Ratchet-Parse.com-ToDo-Example "Did I mention it's awesome!")
-
-## Phonegap + Ratchet + Parse.com + Magic = Awesome
-
 I have combined all of these components plus more to create a lightweight demo app that runs buttery smooth on Android 4+ and iOS.
+
+## [Here's the demo](http://outerplex.com/Phonegap-Ratchet-Parse.com-ToDo-Example "Did I mention it's awesome!")
 
 ## Installation
 
