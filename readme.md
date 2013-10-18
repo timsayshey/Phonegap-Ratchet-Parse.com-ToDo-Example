@@ -44,7 +44,7 @@ Well, this is all meant for phonegap but you could use it with Trigger.io or jus
 
 ### Why Railo?
 
-Mainly to keep the code more organized and easier to read and manage. Instead of writing up all the code in one huge HTML file, it is written out in separate files then compiled with Railo in to one HTML file. One of the great features of Railo is that the language is so easy to learn. At times, it's almost like an extension of HTML. Plus, since it is a Java framework, you have access to all of the power of Java.
+Mainly to keep the code more organized and easier to read and manage. Instead of writing up all the code in one huge HTML file, it is written out in separate files then compiled with Railo in to one HTML file. One of the great features of Railo is that the language is so easy to learn. At times, it's almost like an extension of javascript. Plus, since it is a Java framework, you have access to all of the power of Java.
 
 ### This is opensource
 
