@@ -12,9 +12,9 @@ Just download and extract the code to a folder. Then open the index.html file in
 
 I would recommend that you change the Parse app key and rest key with your own. To do this edit /assets/jsvendor/jquery.parse.js lines 5 and 6.
 
-Coldfusion (CFML) is only required to compile the index.html file. Of course you could use this without it but it would be very difficult IMO.
+Railo is only required to compile the index.html file. Of course you could use this without it but it would be very difficult IMO.
 
-### Compiling with CFML (quick n easy)
+### Compiling with Railo (quick n easy)
 
 Just download the free opensource easy installer at (http://getrailo.org/download/) (available for any OS). 
 
@@ -42,9 +42,9 @@ Its FREE and its pretty sweet. Perfect restful backend for my app that required 
 
 Well, this is all meant for phonegap but you could use it with Trigger.io or just post it straight to the interwebs but thats up to you.
 
-### Why CFML?
+### Why Railo?
 
-Mainly to keep the code more organized and easier to read and manage. Instead of writing up all the code in one huge HTML file, it is written out in separate files then compiled with CFML in to one HTML file. One of the great features of CFML is that the language is so easy to learn. At times, it's almost like an extension of HTML. Plus, since it runs on Java, you have access to all of the power of Java.
+Mainly to keep the code more organized and easier to read and manage. Instead of writing up all the code in one huge HTML file, it is written out in separate files then compiled with Railo in to one HTML file. One of the great features of Railo is that the language is so easy to learn. At times, it's almost like an extension of HTML. Plus, since it is a Java framework, you have access to all of the power of Java.
 
 ### This is opensource
 
